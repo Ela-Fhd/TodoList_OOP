@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Font/css/all.css" />
+    <link rel="stylesheet" href="./Font/css/sharp-solid.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="icon" href="./Icon/favIcon.png" />
+    <script src="./Js/script.js" async defer></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <i class="fa-solid fa-bars-staggered open-menue"></i>
+
+        <input type="checkbox" id="theme" />
+        <label for="theme" class="toggle-theme">
+          <i class="fa-sharp fa-solid fa-sun theme-icon"></i>
+          <i class="fa-sharp fa-solid fa-moon-stars theme-icon"></i>
+        </label>
+
+        <!-- fa-moon-stars -->
+
+        <h3 class="navbar-title">To Do List</h3>
+        <div class="favorites">
+          <span class="badge badge-danger favorite-badge">0</span>
+          <i class="fa-regular fa-heart favorite-icon"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="sidebar">
+        <i class="fa-regular fa-circle toggle-sidebar"></i>
+        <ul>
+          <li class="sidebar-item">
+            <i class="fa-sharp fa-regular fa-books sidebar-icon"></i>
+            <p>All</p>
+            <span class="badge badge-light sidebar-badge all-todos">0</span>
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-regular fa-square-check sidebar-icon"></i>
+            <p>Done</p>
+            <span class="badge badge-light sidebar-badge done-todos">0</span>
+          </li>
+          <li class="sidebar-item">
+            <i class="fa-sharp fa-solid fa-list sidebar-icon"></i>
+            <p>My Favorites</p>
+            <span class="badge badge-light sidebar-badge favorite-todos"
+              >0</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <section class="todo-section">
+        <div class="add-todo">
+          <input type="text" class="todo-input" placeholder="Write ToDo..." />
+          <button class="btn btn-primary add-todo-btn">Add To List</button>
+          <button class="btn btn-danger clear-todo-btn">Clear ToDo List</button>
+        </div>
+        <div class="todo-list">
+          <table id="todo-list">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>To Do</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <div class="modal">
+      <div class="modal-header">
+        <h3>
+          favorites
+          <i class="fa-regular fa-heart"></i>
+        </h3>
+        <span class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+    <div class="backdrop"></div>
+  </body>
+</html>
