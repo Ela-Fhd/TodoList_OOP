@@ -10,7 +10,7 @@
 ![demo](https://github.com/Ela-Fhd/FoodCourt/blob/main/foodCourt/dist/assets/image/demo-4.png)
 ![demo](https://github.com/Ela-Fhd/FoodCourt/blob/main/foodCourt/dist/assets/image/demo-5.png)
 
-  - &#128204;<a href="https://todolist-oop.netlify.app/">Demo</a>
+  - &#128204;<a href="bestfoodcourt.netlify.app/" target="_blank">Demo</a>
   - 🙋‍♀️Developed by Elahe Fahmideh
   - 📆Created : December 2023
   - &#x2714;Technologies : Html , Css , Javascript , Gulp js , Pug js , npm , Pug Plugins
